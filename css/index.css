@@ -62,24 +62,63 @@ header{
 .head_bottom{
 	justify-content: flex-start;
 	height: 120px;
-	background: #F22E00;
 }
 .head_bottom_logo{
 	width: 190px;
 	height: 120px;
-	background: #666666;
 }
 .head_bottom_logo>img{
 	width: 150px;
 	height: 70px;
 }
 .head_bottom_input{
-	width: 780px;
+	flex-wrap: wrap;
+	width: 750px;
 	height: 120px;
-	background: #666666;
 }
 .head_bottom_input>form>input{
+	border-radius: 25px 0px 0px 25px;
+	border: 2px solid #ff5000;
 	padding: 0px 80px 0px 10px;
-	width: 500px;
+	width: 450px;
 	height: 40px;
+}
+.head_bottom_input_ul{
+	line-height: 20px;
+	width: 80%;
+	height: 20px;
+}
+	
+.head_bottom_input_ul_one{
+	position: relative;
+	top: 10px;
+}
+.head_bottom_input_ul_one>ul>li{
+	margin-right: 10px;
+}
+.head_bottom_input_ul_two{
+	position: relative;
+	top: -8px;
+}
+.head_bottom_input_ul_two>ul>li{
+	margin-right: 3px;
+}
+.head_bottom_input_ul>ul>li{
+	float: left;
+	font-size: 12px;
+}
+.head_bottom_input>form{
+	clear: both;
+	width: 85%;
+	display: block;
+}
+.head_bottom_input>form>a{
+	position: relative;
+	left: -5px;
+	top: 1px;
+	padding: 12px 20px;
+	color: #FFFFFF;
+	font-weight: bold;
+	border-radius: 0px 25px 25px 0px;
+	background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
 }
