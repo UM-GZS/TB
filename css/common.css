@@ -1,0 +1,12 @@
+.common-f,
+.common-f-ac,
+.common-f-jc{
+	display: flex;
+}
+.common-f-ac,
+.common-f-jc{
+	align-items: center;
+}
+.common-f-jc{
+	justify-content: center;
+}
