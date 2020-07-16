@@ -3,6 +3,7 @@
 	padding: 0;
 	border: 0;
 	color: #666;
+	outline:none;
 }
 a{
 	text-decoration: none;
@@ -23,7 +24,7 @@ header{
 	width: 1190px;
 }
 .common_Red{
-	color: #F22E00;
+	color: #FF5000;
 }
 .head_top{
 	width: 100%;
@@ -53,11 +54,140 @@ header{
 	float: right;
 }
 .head_top_ul>ul>li{
-	margin-right: 20px;
+	position: relative;
+	padding: 0px 5px;
+	margin-right: 10px;
 	line-height: 35px;
 	height: 35px;
 	float: left;
 	font-size: 12px;
+}
+.show_other:hover{
+	background: #FFFFFF;
+}
+.show_other:hover .show_address,
+.show_other:hover .show_my,
+.show_other:hover .show_car,
+.show_other:hover .show_sc,
+.show_other:hover .show_shop,
+.show_other:hover .show_kf,
+.show_other:hover .show_more
+{
+	display: block;
+}
+.show_common{
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	background: #FFFFFF;
+	border: 1px solid #f4f4f4;
+	border-top: none;
+	z-index: 2;
+	display: none;
+}
+.show_address{
+	width: 270px;
+	height: 300px;
+	overflow-y: scroll;
+}
+.show_my,
+.show_sc,
+.show_kf
+{
+	width: 80px;
+	height: 70px;
+}
+.show_shop{
+	width: 85px;
+	height: 244px;
+}
+.show_car{
+	width: 315px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.show_more{
+	width: 1190px;
+	height: 310px;
+	position: absolute;
+	left: -1103px;
+}
+.show_more_list{
+	width: 100%;
+	height: 100%;
+	padding-top: 5px;
+}
+.show_more_item{
+	width: 290px;
+	height: 300px;
+	padding-left: 10px;
+	border-right: 1px solid #F4F4F4;
+}
+.common_more_ul>p{
+	font-size: 15px;
+	font-weight: 600;
+}
+.common_more_ul>li{
+	width: 60px;
+	float: left;
+	line-height: 29px;
+	margin: 0px 10px 0px 0px;
+}
+.common_more_ul>li>a{
+	font-size: 13px;
+	padding: 4px 6px;
+}
+.common_more_ul>li>a:hover{
+	color: #FFFFFF;
+}
+.show_more_ul_one>p{
+	color: #FC581E;
+}
+.show_more_ul_one>li>a:hover{
+	background: #FC581E;
+}
+.show_more_ul_two>p{
+	color: #A0B959;
+}
+.show_more_ul_two>li,
+.show_more_ul_three>li
+{
+	width: 70px;
+}
+.show_more_ul_two>li>a:hover{
+	background: #A0B959;
+}
+.show_more_ul_three>p{
+	color: #DF61AB;
+}
+.show_more_ul_three>li>a:hover{
+	background: #DF61AB;
+}
+.show_more_ul_four>p{
+	color: #52A0E5;
+}
+.show_more_ul_four>li>a:hover{
+	background: #52A0E5;
+}
+.show_more_ul_four>li{
+	width: 100px;
+	margin: 0px 15px 0px 0px;
+}
+.show_car>p>a{
+	background: #FF5000;
+	padding: 6px 10px;
+	color: #FFFFFF;
+}
+.show_ul>li>a{
+	display: block;
+	padding-left: 5px;
+}
+.show_ul>li>a:hover{
+	background: #F4F4F4;
+}
+.head_top_ul>ul>li>i{
+	font-size: 1px;
 }
 .head_bottom{
 	justify-content: flex-start;
@@ -76,12 +206,23 @@ header{
 	width: 750px;
 	height: 120px;
 }
+	
 .head_bottom_input>form>input{
 	border-radius: 25px 0px 0px 25px;
 	border: 2px solid #ff5000;
-	padding: 0px 80px 0px 10px;
-	width: 450px;
-	height: 40px;
+	padding: 0px 70px 0px 40px;
+	width: 430px;
+	height: 37px;
+}
+.head_bottom_input>form>i:first-child{
+	position: absolute;
+	left: 15px;
+}
+.head_bottom_input>form>i{
+	position: absolute;
+	right: 110px;
+	top: 12px;
+	z-index: 1;
 }
 .head_bottom_input_ul{
 	line-height: 20px;
@@ -91,10 +232,18 @@ header{
 	
 .head_bottom_input_ul_one{
 	position: relative;
-	top: 10px;
+	top: 11.33px;
 }
 .head_bottom_input_ul_one>ul>li{
-	margin-right: 10px;
+	margin-right: 5px;
+}
+.head_bottom_input_ul_one>ul>li>a{
+	text-align: center;
+	padding: 4px 6px;
+	color: #FF5000;
+}
+.head_bottom_input_ul_one>ul>li>a:hover{
+	background: #FFEEE5;
 }
 .head_bottom_input_ul_two{
 	position: relative;
@@ -103,22 +252,36 @@ header{
 .head_bottom_input_ul_two>ul>li{
 	margin-right: 3px;
 }
+.head_bottom_input_ul_two>ul>li>a:hover,
+.head_top_ul>ul>li>a:hover
+{
+	color: #FF5000;
+}
 .head_bottom_input_ul>ul>li{
 	float: left;
 	font-size: 12px;
 }
 .head_bottom_input>form{
+	position: relative;
 	clear: both;
 	width: 85%;
 	display: block;
 }
 .head_bottom_input>form>a{
 	position: relative;
-	left: -5px;
-	top: 1px;
-	padding: 12px 20px;
+	left: -6px;
+	top: 2px;
+	padding: 10px 20px;
 	color: #FFFFFF;
-	font-weight: bold;
+	font-weight: 600;
 	border-radius: 0px 25px 25px 0px;
+	background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+}
+.active,
+.head_bottom_input_ul_one .active:hover
+{
+	border-radius: 6px 6px 0px 0px;
+	color: #FFFFFF!important;
+	font-weight: 600;
 	background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
 }

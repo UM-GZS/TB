@@ -1,6 +1,8 @@
 .common-f,
 .common-f-ac,
-.common-f-jc{
+.common-f-jc,
+.common-f-sa,
+.common-f-fg{
 	display: flex;
 }
 .common-f-ac,
@@ -9,4 +11,11 @@
 }
 .common-f-jc{
 	justify-content: center;
+}
+.common-f-sa,
+.common-f-fg{
+	justify-content: space-around;
+}
+.common-f-fg{
+	flex-grow: 1;
 }
