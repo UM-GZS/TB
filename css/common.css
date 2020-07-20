@@ -2,7 +2,9 @@
 .common-f-ac,
 .common-f-jc,
 .common-f-sa,
-.common-f-fg{
+.common-f-fg,
+.common-f-fg,
+.common-f-sb{
 	display: flex;
 }
 .common-f-ac,
@@ -15,6 +17,10 @@
 .common-f-sa,
 .common-f-fg{
 	justify-content: space-around;
+}
+.common-f-sb,
+.common-f-fg{
+	justify-content: space-between;
 }
 .common-f-fg{
 	flex-grow: 1;

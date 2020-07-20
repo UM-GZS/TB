@@ -65,13 +65,14 @@ header{
 .show_other:hover{
 	background: #FFFFFF;
 }
-.show_other:hover .show_address,
+/* .show_other:hover .show_address, */
 .show_other:hover .show_my,
 .show_other:hover .show_car,
 .show_other:hover .show_sc,
 .show_other:hover .show_shop,
 .show_other:hover .show_kf,
-.show_other:hover .show_more
+.show_other:hover .show_more,
+.show_other:hover .body_box_show
 {
 	display: block;
 }
@@ -284,4 +285,106 @@ header{
 	color: #FFFFFF!important;
 	font-weight: 600;
 	background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+}
+.body_box{
+	width: 1190px;
+	height: 550px;
+	margin: 0px auto;
+}
+.body_box_head{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background: linear-gradient(to right,#ff9000 0,#ff5000 100%);
+}
+.body_box_head_ul>li{
+	text-align: center;
+	float: left;
+	color: #FFFFFF;
+}
+.body_box_head_ul>li>a{
+	color: #FFFFFF;
+	margin: 0px 10px;
+}
+.body_box_head_ul>li:first-child{
+	width: 190px;
+	background: #FF5000;
+}
+.body_box_box{
+	width: 100%;
+	height: 520px;
+}
+.body_box_box_left{
+	width: 188px;
+	height: 100%;
+	background: #FFFFFF;
+	border: 1px solid #E51B1B;
+}
+.body_box_box_center{
+	width: 690px;
+	height: 100%;
+	background: #A0B959;
+}
+.body_box_box_right{
+	width: 290px;
+	height: 100%;
+	background: #DF61AB;
+}
+.body_box_box_left_ul{
+	position: relative;
+	padding: 5px 0px;
+}
+.body_box_box_left_ul .show_other{
+	width: 188px;
+	height: 32px;
+}
+.body_box_box_left_ul .show_other>a{
+	font-size: 14px;
+	display: block;
+	padding: 6px 5px 6px 20px;
+}
+.body_box_box_left_ul .show_other>a:hover{
+	background: #FFE4DC;
+	color: #E51B1B;
+}
+
+.body_box_box_left_ul .show_other>a>i{
+	float: right;
+}
+.body_box_show{
+	position: absolute;
+	top: 0px;
+	left: 190px;
+	width: 715px;
+	height: 520px;
+	background: #FC581E;
+	display: none;
+}
+.body_box_show_left{
+	float: left;
+	width: 454px;
+	height: 100%;
+	background: #666666;
+}
+.body_box_show_right{
+	float: left;
+	width: 260px;
+	height: 100%;
+	background: #E51B1B;
+}
+.body_box_show_left_box{
+	margin: 10px auto;
+	width: 430px;
+	height: 145px;
+	background: #F1F1F1;
+	font-size: 12px;
+}
+.body_box_show_left_box>p>span{
+	font-size: 14px;
+}
+.body_box_show_left_box>p>a{
+	float: right;
+}
+.body_box_show_left_box>ul>li{
+	float: left;
 }
