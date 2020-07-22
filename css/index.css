@@ -396,10 +396,52 @@ header {
 .body_box_box_center_item {
 	background: #52A0E5;
 }
-#swiper_ul>li>a>img{
+
+#swiper {
+	position: relative;
+	overflow: hidden;
+}
+
+#swiper ul {
+	position: absolute;
+}
+
+#swiper ul li {
+	height: 280px;
+}
+
+#swiper ol {
+	padding: 3px;
+	background: #52A0E5;
+	position: absolute;
+	top: 93%;
+	left: 50%;
+	border-radius: 25px;
+	transform:translate(-50%,-50%);
+}
+
+#swiper ol li {
+	height: 8px;
+	width: 8px;
+	background: #FFFFFF;
+	margin: 0px 3px;
+	border-radius: 100%;
+	float: left;
+	line-height: center;
+	text-align: center;
+	cursor: pointer;
+}
+
+#swiper ol .swiper_on {
+	background: #FC581E;
+	color: #fff;
+}
+
+#swiper_ul>li>a>img {
 	width: 100%;
 	height: 100%;
 }
+
 .body_box_box_right {
 	width: 290px;
 	height: 100%;
