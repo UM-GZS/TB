@@ -412,7 +412,7 @@ header {
 
 #swiper ol {
 	padding: 3px;
-	background: #52A0E5;
+	background: rgba(255,255,255,0.4);
 	position: absolute;
 	top: 93%;
 	left: 50%;
@@ -482,6 +482,7 @@ header {
 	background: #FFFFFF;
 	display: none;
 	border: 1px solid #E51B1B;
+	z-index: 2;
 }
 
 .body_box_show_left {

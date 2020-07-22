@@ -5,21 +5,20 @@ window.onload = function() {
 	index = 0,
 	timer = null;
 	
-	timer = setInterval(autoPlay, 2000);
+	timer = setInterval(autoPlay, 4000);
 	
 	swiper.onmouseover = function () {
 		clearInterval(timer);
 	}
 	
 	swiper.onmouseout = function () {
-		timer = setInterval(autoPlay, 2000);
+		timer = setInterval(autoPlay, 4000);
 	}
 	
 	for(var i = 0;i < list.length;i++) {
 		list[i].onmouseover = function () {
+			index = this.getAttribute("data") - 1;
 			clearInterval(timer);
-			index = list.getAttribute("title") - 1;
-			console.log("data is :"+index)
 			changePic(index);
 		}
 	}
